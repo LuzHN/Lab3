@@ -213,7 +213,7 @@ int main(){
 				cout<<num[2]<<num[3]<<num[1]<<num[0]<<endl;
 				cout<<num[2]<<num[0]<<num[1]<<num[3]<<endl;
 				cout<<num[2]<<num[0]<<num[3]<<num[1]<<endl;
-				cout<<num[2]<<num[1]<<num[3]<<num[0]<<endl;
+				cout<<num[2]<<num[1]<<num[0]<<num[3]<<endl;
 				cout<<num[2]<<num[1]<<num[3]<<num[0]<<endl;
 
 				cout<<num[3]<<num[0]<<num[1]<<num[2]<<endl;
