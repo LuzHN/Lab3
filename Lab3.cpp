@@ -25,7 +25,6 @@ int main(){
 				int domingos = 0;
 				int quedia = 0;
 
-
 				for (int i = 1; i < 100; ++i){
 					esbisiesto++;
 					
