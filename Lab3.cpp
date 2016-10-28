@@ -5,7 +5,6 @@ using namespace std;
 int main(){
 	int opcion = 0;
 	
-
 	while(opcion >= 0 && opcion < 4){
 		cout << "Ingrese opcion:"<< endl << "1. Ej. 1."<< 
 					endl << "2. Ej2. " << endl << "3. Ej3."<< 
