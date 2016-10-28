@@ -2,9 +2,11 @@
 
 using namespace std;
 
+
 int main(){
 	int opcion = 0;
 	
+
 	while(opcion >= 0 && opcion < 4){
 		cout << "Ingrese opcion:"<< endl << "1. Ej. 1."<< 
 					endl << "2. Ej2. " << endl << "3. Ej3."<< 
@@ -23,6 +25,7 @@ int main(){
 				int diaespecifico = 0;
 				int domingos = 0;
 				int quedia = 0;
+
 
 				for (int i = 1; i < 100; ++i){
 					esbisiesto++;
@@ -178,16 +181,13 @@ int main(){
 					cout<< endl << endl;
 				}
 
-				
-
-				
 
 				break;
 			}
 			case 3:{
 
 				int num[4];
-				
+
 				for (int i = 0; i < 4; ++i){
 					cout<<"Ingrese numero" << i << " :" ;
 					cin>>num[i];
