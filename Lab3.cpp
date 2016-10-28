@@ -2,11 +2,12 @@
 
 using namespace std;
 
+
 int main(){
 	int opcion = 0;
 	
 
-	while(opcion >= 0 && opcion < 5){
+	while(opcion >= 0 && opcion < 4){
 		cout << "Ingrese opcion:"<< endl << "1. Ej. 1."<< 
 					endl << "2. Ej2. " << endl << "3. Ej3."<< 
 					endl << "4. Salir.";
@@ -22,11 +23,11 @@ int main(){
 				int esbisiesto = 0;
 
 				int diaespecifico = 0;
-				int domingos = -1;
+				int domingos = 0;
 				int quedia = 0;
 
 
-				for (int i = 0; i < 100; ++i){
+				for (int i = 1; i < 100; ++i){
 					esbisiesto++;
 					
 					for (int j = 1; j <= 12; ++j){
@@ -99,17 +100,101 @@ int main(){
 
 				int arrcoef[gradopoli];
 
-				for (int i = gradopoli; i > 0; --i)
+				for (int i = gradopoli; i >= 0; --i)
 				{
-					cout<< "Ingrese el coeficiente de X^"<<i << " : ";
+					cout<< "Ingrese el coeficiente de X^"<< i << " : ";
 					cin >> arrcoef[i];
 					cout << endl;
 
 				}
 
-				for (int i = gradopoli; i > 0; --i)
+				/*
+				for (int i = gradopoli; i >= 0; --i)
 				{
 					cout << endl << arrcoef[i];
+				}
+				*/
+
+				int matriz[2][gradopoli + 1];
+
+
+				for (int i = 0; i < 3; ++i)
+				{
+					for (int j = 0; j < gradopoli + 1; ++j)
+					{
+						matriz[i][j] = 0;
+					}
+				}
+
+				
+				for (int i = 0; i < gradopoli + 1; ++i)
+				{
+					matriz[0][i] = arrcoef[gradopoli - i];
+				}
+
+				/*for (int i = 0; i < 3; ++i)
+				{
+					for (int j = 0; j < gradopoli + 1; ++j)
+					{
+						cout<< matriz[i][j] << " ";
+					}
+					cout << endl;
+				}
+				*/
+
+				int a = 0;
+				cout << "Ingrese a: ";
+				cin >> a;
+
+				matriz[2][0] =	matriz[0][0] * a;
+
+
+				for (int i = 0; i <= gradopoli + 1; ++i)
+				{
+
+					for (int j = 0; j < 2; ++j)
+					{
+						matriz[i + 1][j + 1] = matriz[2][i] * a;
+	
+
+						matriz[2][i + 1] = matriz[i + 1][j +1] + matriz[0][i + 1];
+						
+					}
+
+					for (int i = 0; i < 3; ++i)
+					{
+						if(i == 2){
+						cout<< "-------------" << endl;
+						}
+						for (int j = 0; j < gradopoli + 1; ++j)
+						{
+							cout<< matriz[i][j] << " ";
+							if(j == gradopoli){
+								cout<< "| ";
+							}
+							if(j == gradopoli && i == 0){
+								cout<< a;
+							}
+						}
+						cout<<endl;
+					}
+					cout<< endl << endl;
+				}
+
+				
+
+				
+
+				break;
+			}
+			case 3:{
+				int numero = 0;
+				cout<< "Ingrese numero: ";
+				cin >> numero;
+
+				for (int i = 0; i < 24; ++i)
+				{
+					
 				}
 
 			}
