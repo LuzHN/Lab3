@@ -188,15 +188,43 @@ int main(){
 				break;
 			}
 			case 3:{
-				int numero = 0;
-				cout<< "Ingrese numero: ";
-				cin >> numero;
 
-				for (int i = 0; i < 24; ++i)
-				{
-					
+				int num[4];
+				
+				for (int i = 0; i < 4; ++i){
+					cout<<"Ingrese numero" << i << " :" ;
+					cin>>num[i];
 				}
+				cout<<num[0]<<num[1]<<num[2]<<num[3]<<endl;
+				cout<<num[0]<<num[1]<<num[3]<<num[2]<<endl;
+				cout<<num[0]<<num[2]<<num[3]<<num[1]<<endl;
+				cout<<num[0]<<num[2]<<num[1]<<num[3]<<endl;
+				cout<<num[0]<<num[3]<<num[1]<<num[2]<<endl;
+				cout<<num[0]<<num[3]<<num[2]<<num[1]<<endl;
 
+				cout<<num[1]<<num[2]<<num[3]<<num[0]<<endl;
+				cout<<num[1]<<num[2]<<num[0]<<num[3]<<endl;
+				cout<<num[1]<<num[3]<<num[0]<<num[2]<<endl;
+				cout<<num[1]<<num[3]<<num[2]<<num[0]<<endl;
+				cout<<num[1]<<num[0]<<num[2]<<num[3]<<endl;
+				cout<<num[1]<<num[0]<<num[3]<<num[2]<<endl;
+
+				cout<<num[2]<<num[3]<<num[0]<<num[1]<<endl;
+				cout<<num[2]<<num[3]<<num[1]<<num[0]<<endl;
+				cout<<num[2]<<num[0]<<num[1]<<num[3]<<endl;
+				cout<<num[2]<<num[0]<<num[3]<<num[1]<<endl;
+				cout<<num[2]<<num[1]<<num[3]<<num[0]<<endl;
+				cout<<num[2]<<num[1]<<num[3]<<num[0]<<endl;
+
+				cout<<num[3]<<num[0]<<num[1]<<num[2]<<endl;
+				cout<<num[3]<<num[0]<<num[2]<<num[1]<<endl;
+				cout<<num[3]<<num[1]<<num[2]<<num[0]<<endl;
+				cout<<num[3]<<num[1]<<num[0]<<num[2]<<endl;
+				cout<<num[3]<<num[2]<<num[0]<<num[1]<<endl;
+				cout<<num[3]<<num[2]<<num[1]<<num[0]<<endl;
+		
+
+				
 			}
 		}
 	}
